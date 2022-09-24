@@ -33,7 +33,7 @@ function prase() {
   }
   url = url.replace(/&amp;/g, '&');
   url = url.replace(/&web=1/g, '');
-  url = url.replace(/&X-snsvideoflag=xV4/g, '');
+  url = url.replace(/&X-snsvideoflag=xV\d/g, '');
   console.log(url);
   document.getElementById('result').innerText = url;
   document.getElementById('result').setAttribute('href', url);
